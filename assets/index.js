@@ -123,7 +123,13 @@ const arr15 = [
 ];
 
 const addInfo = arr15.map (function (info, i) {
-  return info.telephoneNumber = 3802233445 + i;
+  return {
+    firstName: info.firstName,
+    lastName: info.lastName,
+    age: info.age,
+    gender: info.gender,
+    telephoneNumber: info.telephoneNumber = 3802233445 + i,
+  }
 });
 
 /*Работа с filter
