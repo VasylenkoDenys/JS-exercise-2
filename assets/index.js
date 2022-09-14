@@ -146,12 +146,12 @@ const arr16 = [
 ];
 
 const adultSelect = arr16.filter (function (adult) {
-  return adult.age >= 18;
+  return adult.age >= 18 && adult.gender === 'male';
 });
 
-const adultGenderSelect = adultSelect.filter (function (genderSelect) {
-  return genderSelect.gender === 'male';
-});
+// const adultGenderSelect = adultSelect.filter (function (genderSelect) {
+//   return genderSelect.gender === 'male';
+// });
 
 /*Работа с flat
 Для решения задач данного блока вам понадобятся следующие методы: flat
